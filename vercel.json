@@ -3,9 +3,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "functions": {
-    "*.html": {
-      "runtime": "edge@2022.10.1"
-    }
-  }
+  "devCommand": "next dev",
+  "framework": "nextjs"
 }

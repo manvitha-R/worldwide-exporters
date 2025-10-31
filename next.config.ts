@@ -7,9 +7,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    domains: ['your-domain.vercel.app'],
-    unoptimized: true, // Important for static exports if needed
+    unoptimized: true, // Important for Vercel deployment
   },
+  trailingSlash: false,
 }
 
 module.exports = nextConfig
