@@ -1,3 +1,6 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import Layout from "./components/Layout";
 import { Inter, Roboto_Mono } from 'next/font/google'
 
 const inter = Inter({
@@ -12,6 +15,12 @@ const robotoMono = Roboto_Mono({
   variable: '--font-roboto-mono',
 })
 
+export const metadata: Metadata = {
+  title: "WEINDIAN EXPORTERS",
+  description: "LEADING EXPORT IMPORT COMPANY COMMITTED TO QUALITY AND EXCELLENCE ",
+};
+
+
 export default function RootLayout({
   children,
 }: {
@@ -20,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <body>
-        {children}
+        <Layout>{children}</Layout>
       </body>
     </html>
   )
