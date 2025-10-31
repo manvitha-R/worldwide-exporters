@@ -5,8 +5,6 @@
   "installCommand": "npm install",
   "devCommand": "next dev",
   "framework": "nextjs"
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> beff94ecbeece95b646e4decc86b6f54340fdfef
+
