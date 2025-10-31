@@ -7,7 +7,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true, // Important for Vercel deployment
+    unoptimized: true,
   },
   trailingSlash: false,
 }
