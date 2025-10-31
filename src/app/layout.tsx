@@ -1,33 +1,27 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Layout from "./components/Layout";
+import { Inter, Roboto_Mono } from 'next/font/google'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "WEINDIAN EXPORTERS",
-  description: "LEADING EXPORT IMPORT COMPANY COMMITTED TO QUALITY AND EXCELLENCE ",
-};
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto-mono',
+})
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-     <html lang="en">
+    <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <body>
-        <Layout>{children}</Layout>
+        {children}
       </body>
     </html>
-  );
+  )
 }
