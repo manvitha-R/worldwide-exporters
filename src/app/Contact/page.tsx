@@ -302,8 +302,8 @@ const ContactUs = () => {
                     <div className="ml-4">
                       <h3 className="text-lg font-semibold text-gray-900">Address</h3>
                       <p className="text-gray-600 mt-1">
-                        Coonoor<br />
-                        Tamil Nadu<br />
+                        Coonoor,<br />
+                        Tamil Nadu,<br />
                         India
                       </p>
                     </div>
