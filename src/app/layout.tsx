@@ -16,7 +16,7 @@ const robotoMono = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "WEINDIAN EXPORTERS",
+  title: "WORLDWIDE INDIAN EXPORTERS",
   description: "LEADING EXPORT IMPORT COMPANY COMMITTED TO QUALITY AND EXCELLENCE ",
 };
 
