@@ -54,7 +54,7 @@ const Products = () => {
                                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                     }`}
                             >
-                                🌿 Cardamom - Queen of Spices
+                             Cardamom - Queen of Spices
                             </button>
                             <button
                                 onClick={() => { setActiveTab('pepper'); scrollToSection(pepperRef); }}
@@ -63,7 +63,7 @@ const Products = () => {
                                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                                     }`}
                             >
-                                🌶️ Black Pepper - King of Spices
+                             Black Pepper - King of Spices
                             </button>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ const Products = () => {
                             {/* Content Section */}
                             <div className="p-4 sm:p-6 lg:p-8">
                                 <div className="flex items-center mb-3 sm:mb-4">
-                                    <span className="text-2xl sm:text-3xl mr-2 sm:mr-3">👑</span>
+                                    {/* <span className="text-2xl sm:text-3xl mr-2 sm:mr-3">👑</span> */}
                                     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Cardamom - The Queen of Spices</h2>
                                 </div>
 
@@ -227,7 +227,7 @@ const Products = () => {
                             {/* Content Section */}
                             <div className="p-4 sm:p-6 lg:p-8 order-2 lg:order-1">
                                 <div className="flex items-center mb-3 sm:mb-4">
-                                    <span className="text-2xl sm:text-3xl mr-2 sm:mr-3">👑</span>
+                                    {/* <span className="text-2xl sm:text-3xl mr-2 sm:mr-3">👑</span> */}
                                     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Black Pepper - The King of Spices</h2>
                                 </div>
 
