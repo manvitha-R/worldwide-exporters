@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef, RefObject } from 'react';
-import Head from 'next/head';
+import Link from 'next/link';
 
 const Products = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -33,18 +33,12 @@ const Products = () => {
                 <div className="absolute inset-0 bg-opacity-40 backdrop-blur-sm"></div>
             </div>
 
-            {/* Main Content */}
-            <div className="relative z-10 pt-16 md:pt-24">
-                <Head>
-                    <title>Premium Spices - Worldwide Indian Exporters</title>
-                    <meta name="description" content="Discover premium Indian spices including Cardamom and Black Pepper, sourced directly from the finest plantations in India." />
-                    <meta name="viewport" content="width=device-width, initial-scale=1" />
-                </Head>
-
+            {/* Main Content - ADD mt-16 for navbar space */}
+             <div className="pt-24 z-10">
                 {/* Hero Section */}
-                <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 text-center transition-all duration-700 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+                  <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12 text-center transition-all duration-700 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 px-2">Premium Indian Spices</h1>
-                    <p className="text-lg sm:text-xl text-black-100 max-w-3xl mx-auto px-4">
+                    <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto px-4">
                         Experience the Authentic Taste of India's Finest Spices, Direct from Source to Your Table
                     </p>
                 </section>
@@ -390,18 +384,18 @@ const Products = () => {
                             directly sourced from India's best plantations.
                         </p>
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
-                            <a
+                            <Link
                                 href="/Contact"
                                 className="inline-block bg-white text-blue-600 font-bold py-3 px-6 sm:px-8 rounded-lg hover:bg-blue-50 transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base"
                             >
                                 Request a Quote
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="/Contact"
                                 className="inline-block border-2 border-white text-white font-bold py-3 px-6 sm:px-8 rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300 text-sm sm:text-base"
                             >
                                 Contact Sales
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </section>
