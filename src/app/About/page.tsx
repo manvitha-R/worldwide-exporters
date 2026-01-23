@@ -34,9 +34,9 @@ const AboutUs = () => {
 
         <section className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center transition-all duration-700 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">The New Standard in Global Indian Exports</h1>
-          <p className="text-gray-200">
+          {/* <p className="text-gray-200">
             At WORLDWIDE INDIAN EXPORTERS, we are more than just an export company; we are a bridge. We are a dynamic team of passionate professionals dedicated to curating and delivering the unparalleled richness of Indian products to a global audience.
-          </p>
+          </p> */}
         </section>
 
         {/* Intro Section */}
