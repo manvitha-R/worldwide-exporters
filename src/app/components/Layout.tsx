@@ -20,7 +20,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Link href="/" className="flex items-center">
                 <div className="relative h-8 w-8 md:h-10 md:w-10 mr-2 md:mr-3 flex-shrink-0">
                   <Image
-                    src="/logo.jpg"
+                    src="/logo 1.png"
                     alt="WORLDWIDE INDIAN EXPORTERS"
                     fill
                     className="object-contain"
